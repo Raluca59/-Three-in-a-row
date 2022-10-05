@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Almendra Display';
+    color: aliceblue;
+    background-color: black;
+}
+
+#main {
+    background: url(../images/bricks-wall-stones-structure-37865.jpeg);
+    background-size: cover;
+    height: 950px;
+}
+
+.game-title {
+    font-size: 110px;
+    text-align: center;
+}
+
