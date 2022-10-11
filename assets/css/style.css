@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Almendra Display';
+    font-family: 'Almendra Display', sans-serif;
     color: aliceblue;
     background-color: black;
 }
@@ -36,14 +36,26 @@ body {
 
 
 .square {
-    font-family: 'Almendra Display';
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Almendra Display', sans-serif;
     width: 150px;
     height: 150px;
     border: 1px solid rgb(53, 8, 216);
-    opacity: 0.3;
-    /* cursor: pointer; */
+    cursor: pointer;
     line-height: 100px;
-    font-size: 60px;
-    
+    color: rgb(102, 14, 243);
+    text-shadow:
+    0 0 8px rgb(255, 255, 255),
+    0 0 11px rgb(9, 182, 235),
+    0 0 22px rgb(165, 27, 219), 
+    0 0 40px rgb(150, 7, 233), 
+    0 0 78px rgb(44, 93, 228), 
+    0 0 90px rgb(174, 18, 247),
+    0 0 107px rgb(147, 56, 223),  
+    0 0 159px rgb(221, 13, 248);  
 }
 
+#main {
+   text-align: center;
+}
