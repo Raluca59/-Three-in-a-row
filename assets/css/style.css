@@ -33,6 +33,7 @@ body {
     background-color: black;
     margin: 120px auto;
     border: 4px solid blue;
+    position: relative;
 }
    
 
@@ -67,23 +68,80 @@ body {
 
 
 #restartButton {
- position: absolute;
- bottom: 120px;
- left: 900px;
- padding: 20px 20px;
- font-weight: bold;
- border-radius: 50%;
- background-color: black;
- color: rgb(228, 221, 240);
- text-shadow:
- 0 0 8px rgb(255, 255, 255),
- 0 0 11px rgb(9, 182, 235),
- 0 0 22px rgb(165, 27, 219), 
- 0 0 40px rgb(150, 7, 233), 
- 0 0 78px rgb(44, 93, 228), 
- 0 0 90px rgb(174, 18, 247),
- 0 0 107px rgb(147, 56, 223),  
- 0 0 159px rgb(221, 13, 248); 
- border: 3px solid violet;
+   position: absolute;
+   bottom: 120px;
+   left: 900px;
+   padding: 20px 20px;
+   font-weight: bold;
+   border-radius: 50%;
+   background-color: black;
+   color: rgb(228, 221, 240);
+   text-shadow:
+   0 0 8px rgb(255, 255, 255),
+   0 0 11px rgb(9, 182, 235),
+   0 0 22px rgb(165, 27, 219), 
+   0 0 40px rgb(150, 7, 233), 
+   0 0 78px rgb(44, 93, 228), 
+   0 0 90px rgb(174, 18, 247),
+   0 0 107px rgb(147, 56, 223),  
+   0 0 159px rgb(221, 13, 248); 
+   border: 3px solid violet;
  
 }
+
+.strike {
+  position: absolute;
+  background-color: rgb(243, 11, 11);
+}
+
+.strike-row-one {
+  width: 100%;
+  height: 2px;
+  top: 17%;
+}
+
+.strike-row-two {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+}
+
+.strike-row-three {
+  width: 100%;
+  height: 2px;
+  top: 83%;
+}  
+
+.strike-column-one {
+    height: 100%;
+    width: 2px;
+    left: 17%;
+  }
+  
+  .strike-column-two {
+    height: 100%;
+    width: 2px;
+    left: 50%;
+  }  
+  
+  .strike-column-three {
+    height: 100%;
+    width: 2px;
+    left: 83%;
+  }   
+  
+  .strike-diagonal-one {
+    left: 7%;
+    height: 2px;
+    top: 50%;
+    width: 90% ;
+    transform: skewY(45deg);
+  } 
+
+  .strike-diagonal-two {
+    left: 7%;
+    height: 2px;
+    top: 50%;
+    width: 90% ;
+    transform: skewY(-45deg);
+  }       

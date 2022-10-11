@@ -1,6 +1,6 @@
 const squares = document.querySelectorAll(".square");
 const restartButton = document.querySelector("#restartButton");
-const uppdateText = document.querySelector("#uppdateText");
+const updateText = document.querySelector("#uppdateText");
 const winningConditions =[
     [0,1,2],
     [3,4,5],
@@ -23,7 +23,7 @@ initializeGame();
 function initializeGame(){
 squares.forEach(square => square.addEventListener("click", squareClicked));
 restartButton.addEventListener("click", restartGame);
-uppdateText.textContent = `${player}'s turn`;
+updateText.textContent = `${player}'s turn`;
 gameRunning = true;
 
 }
@@ -34,11 +34,11 @@ const squareIndex = this.getAttribute("squareIndex");
 if (choices[squareIndex] != "" || !gameRunning) {
     return;
 }
-uppdateSquare(this, squareIndex);
+updateSquare(this, squareIndex);
 checkWinner();
 }
 
-function uppdateSquare(square, index){
+function updateSquare(square, index){
 choices[index] = player;
 square.textContent = player;
 }
@@ -46,11 +46,11 @@ square.textContent = player;
 
 function changePlayer(){
 player = (player == "X") ? "O" : "X";
-uppdateText.textContent = `${player}'s turn`;
+updateText.textContent = `${player}'s turn`;
 }
 
 
-//  the winner
+// Determine the winner
 function checkWinner(){
  let roundWon = false;
 
@@ -69,11 +69,11 @@ for (let i = 0; i < winningConditions.length; i++){
     }
 }
 if (roundWon){
-    uppdateText.textContent = `${player} won!`;
+    updateText.textContent = `${player} won!`;
     gameRunning = false;
  }
  else if(!choices.includes("")){
-    uppdateText.textContent = `Draw!`;
+    updateText.textContent = `Draw!`;
     gameRunning = false;
  }
  else{
@@ -83,6 +83,11 @@ if (roundWon){
 }
 
 function restartGame(){
+player = "X";
+choices =["", "", "", "", "", "", "", "", ""];
+updateText.textContent = `${player}'s turn`;
+squares.forEach(square => square.textContent = "");
+gameRunning = true;
 
 }
 
