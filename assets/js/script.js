@@ -1,5 +1,6 @@
 const squares = document.querySelectorAll(".square");
 const restartButton = document.querySelector("#restartButton");
+const uppdateText = document.querySelector("#uppdateText");
 const winningConditions =[
     [0,1,2],
     [3,4,5],
@@ -17,10 +18,12 @@ let gameRunning = false;
 
 initializeGame();
 
+
 // Adding event listener to each cell and restart button
 function initializeGame(){
 squares.forEach(square => square.addEventListener("click", squareClicked));
 restartButton.addEventListener("click", restartGame);
+uppdateText.textContent = `${player}'s turn`;
 gameRunning = true;
 
 }
@@ -40,15 +43,42 @@ choices[index] = player;
 square.textContent = player;
 }
 
-function computerMove(){
-
-}
 
 function changePlayer(){
-
+player = (player == "X") ? "O" : "X";
+uppdateText.textContent = `${player}'s turn`;
 }
 
+
+//  the winner
 function checkWinner(){
+ let roundWon = false;
+
+for (let i = 0; i < winningConditions.length; i++){
+    const condition = winningConditions[i];
+    const squareX = choices[condition[0]];
+    const squareY = choices[condition[1]];
+    const squareZ = choices[condition[2]];
+
+    if (squareX == "" || squareY == "" || squareZ == "") {
+        continue;
+    }
+    if (squareX == squareY && squareY == squareZ) {
+        roundWon = true;
+        break;
+    }
+}
+if (roundWon){
+    uppdateText.textContent = `${player} won!`;
+    gameRunning = false;
+ }
+ else if(!choices.includes("")){
+    uppdateText.textContent = `Draw!`;
+    gameRunning = false;
+ }
+ else{
+    changePlayer();
+ }
 
 }
 

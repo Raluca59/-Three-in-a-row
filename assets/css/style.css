@@ -16,6 +16,9 @@ body {
     background: url(../images/bricks-wall-stones-structure-37865.jpeg);
     background-size: cover;
     height: 950px;
+    text-align: center;
+    position: relative;
+   
 }
 
 .game-title {
@@ -43,7 +46,7 @@ body {
     height: 150px;
     border: 1px solid rgb(53, 8, 216);
     cursor: pointer;
-    line-height: 100px;
+    line-height: 150px;
     color: rgb(102, 14, 243);
     text-shadow:
     0 0 8px rgb(255, 255, 255),
@@ -53,9 +56,34 @@ body {
     0 0 78px rgb(44, 93, 228), 
     0 0 90px rgb(174, 18, 247),
     0 0 107px rgb(147, 56, 223),  
-    0 0 159px rgb(221, 13, 248);  
+    0 0 159px rgb(221, 13, 248); 
+    
 }
 
-#main {
+#uppdateText {
    text-align: center;
+   font-size: 70px;
+}
+
+
+#restartButton {
+ position: absolute;
+ bottom: 120px;
+ left: 900px;
+ padding: 20px 20px;
+ font-weight: bold;
+ border-radius: 50%;
+ background-color: black;
+ color: rgb(228, 221, 240);
+ text-shadow:
+ 0 0 8px rgb(255, 255, 255),
+ 0 0 11px rgb(9, 182, 235),
+ 0 0 22px rgb(165, 27, 219), 
+ 0 0 40px rgb(150, 7, 233), 
+ 0 0 78px rgb(44, 93, 228), 
+ 0 0 90px rgb(174, 18, 247),
+ 0 0 107px rgb(147, 56, 223),  
+ 0 0 159px rgb(221, 13, 248); 
+ border: 3px solid violet;
+ 
 }
