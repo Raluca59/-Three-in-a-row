@@ -1,6 +1,7 @@
 const squares = document.querySelectorAll(".square");
 const restartButton = document.querySelector("#restartButton");
 const updateText = document.querySelector("#uppdateText");
+
 //restart button and click sound
 const newGameSound = new Audio("sounds/audio.wav");
 const clickSound = new Audio("sounds/click.wav");
