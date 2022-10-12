@@ -13,11 +13,22 @@ body {
 }
 
 #main {
-    background: url(../images/bricks-wall-stones-structure-37865.jpeg);
+    background: url(../images/bild.png);
     background-size: cover;
     height: 950px;
     text-align: center;
     position: relative;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    0 0 8px rgb(255, 255, 255),
+    0 0 11px rgb(9, 136, 175),
+    0 0 22px rgb(0, 162, 255), 
+    0 0 40px rgb(212, 205, 205), 
+    0 0 78px rgb(44, 93, 228), 
+    0 0 90px rgb(231, 222, 235),
+    0 0 107px rgb(147, 56, 223),  
+    0 0 159px rgb(255, 255, 255); 
+    
    
 }
 
@@ -30,9 +41,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 460px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.788);
     margin: 120px auto;
-    border: 4px solid blue;
+    border: 4px solid rgb(90, 6, 247);
     position: relative;
 }
    
@@ -45,17 +56,17 @@ body {
     font-family: 'Almendra Display', sans-serif;
     width: 150px;
     height: 150px;
-    border: 1px solid rgb(53, 8, 216);
+    border: 1px solid rgb(65, 13, 255);
     cursor: pointer;
     line-height: 150px;
-    color: rgb(102, 14, 243);
+    color: rgb(248, 10, 10);
     text-shadow:
-    0 0 8px rgb(255, 255, 255),
-    0 0 11px rgb(9, 182, 235),
-    0 0 22px rgb(165, 27, 219), 
-    0 0 40px rgb(150, 7, 233), 
-    0 0 78px rgb(44, 93, 228), 
-    0 0 90px rgb(174, 18, 247),
+    0 0 8px rgb(187, 230, 0),
+    0 0 11px rgb(18, 136, 172),
+    0 0 22px rgb(219, 27, 27), 
+    0 0 40px rgb(233, 7, 7), 
+    0 0 78px rgb(16, 54, 158), 
+    0 0 90px rgb(155, 4, 224),
     0 0 107px rgb(147, 56, 223),  
     0 0 159px rgb(221, 13, 248); 
     
@@ -74,7 +85,7 @@ body {
    font-weight: bold;
    border-radius: 50%;
    background-color: black;
-   color: rgb(228, 221, 240);
+   color: rgb(224, 218, 218);
    text-shadow:
    0 0 8px rgb(255, 255, 255),
    0 0 11px rgb(9, 182, 235),
@@ -84,7 +95,8 @@ body {
    0 0 90px rgb(174, 18, 247),
    0 0 107px rgb(147, 56, 223),  
    0 0 159px rgb(221, 13, 248); 
-   border: 3px solid violet;
+   border: 3px solid rgb(255, 0, 0);
    text-align: center;
 }
+
 

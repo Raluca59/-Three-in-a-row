@@ -1,8 +1,9 @@
 const squares = document.querySelectorAll(".square");
 const restartButton = document.querySelector("#restartButton");
 const updateText = document.querySelector("#uppdateText");
-//restart button sound
+//restart button and click sound
 const newGameSound = new Audio("sounds/audio.wav");
+const clickSound = new Audio("sounds/click.wav");
 const winningConditions =[
     [0,1,2],
     [3,4,5],
@@ -36,6 +37,7 @@ const squareIndex = this.getAttribute("squareIndex");
 if (choices[squareIndex] != "" || !gameRunning) {
     return;
 }
+clickSound.play();
 updateSquare(this, squareIndex);
 checkWinner();
 }
