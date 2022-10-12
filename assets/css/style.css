@@ -70,7 +70,6 @@ body {
 #restartButton {
    position: absolute;
    bottom: 120px;
-   left: 900px;
    padding: 20px 20px;
    font-weight: bold;
    border-radius: 50%;
@@ -86,9 +85,11 @@ body {
    0 0 107px rgb(147, 56, 223),  
    0 0 159px rgb(221, 13, 248); 
    border: 3px solid violet;
- 
+   text-align: center;
 }
 
+
+ /* Striking lines for all possible winning combinations*/
 .strike {
   position: absolute;
   background-color: rgb(243, 11, 11);

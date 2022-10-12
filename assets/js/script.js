@@ -1,6 +1,8 @@
 const squares = document.querySelectorAll(".square");
 const restartButton = document.querySelector("#restartButton");
 const updateText = document.querySelector("#uppdateText");
+//restart button sound
+const newGameSound = new Audio("sounds/audio.wav");
 const winningConditions =[
     [0,1,2],
     [3,4,5],
@@ -52,7 +54,8 @@ updateText.textContent = `${player}'s turn`;
 
 // Determine the winner
 function checkWinner(){
- let roundWon = false;
+
+let roundWon = false;
 
 for (let i = 0; i < winningConditions.length; i++){
     const condition = winningConditions[i];
@@ -89,6 +92,7 @@ updateText.textContent = `${player}'s turn`;
 squares.forEach(square => square.textContent = "");
 gameRunning = true;
 
-}
+newGameSound.play();
 
+}
 
