@@ -20,6 +20,13 @@ Three In A Row is a simple but fun site that allows two friends to relax and enj
 
 ![The board when someone wins](assets/images/winner.png)
 
+* The background image
+  - Unique image made by the author of this site.
+  - Gives the site a unique and interesting look.
+
+  ![The background](assets/images/background.png)
+
+
 * The "Let's Play! button"
   - A button always present throughout the game. 
   - Lets the players restart the game whenever they feel like it.
@@ -44,14 +51,49 @@ Three In A Row is a simple but fun site that allows two friends to relax and enj
 * I can confirm that the entire site is responsive and adapts to all common screen sizes.
 * I can confirm that every element of the site is readable and easy to understand.
 
+<br>
+
 ### Validator Testing
 
 * HTML
   - No errors were returned when passing through the official [W3C HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fraluca59.github.io%2F-Three-in-a-row%2F).
 
 * CSS
-  - No errors were returned when passing through the official [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraluca59.github.io%2Fcomet-hunt%2Fsignup.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+  - No errors were returned when passing through the official [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fraluca59.github.io%2F-Three-in-a-row%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+
+* JS
+  - No errors were returned when passing through the official [JSHint validator](https://jshint.com/).
 
 * Lighthouse
   - I used Lighthouse in devtools to confirm that the accessibility and performance of the site is at an acceptable level.
+
+    ![The site's lighthouse scores](assets/images/lighthouse.png)
+
+### Unfixed bugs
+
+* There are no unfixed bugs.
+
+<br>
+
+## Deployment
+
+* The site was deployed to GitHub pages. To deploy one must follow these steps:
+  1. Enter the GitHub repository.
+  2. Find the "Settings" tab and click it.
+  3. Find the "Pages" tab and click it.
+  4. Find the "Select branch" drop-down menu under the "Branch" heading.
+  5. Choose "main" in the drop-down menu and save.
+  6. Wait a short while and refresh the page in order to receive a url and a link to the newly deployed site.
+
+<br>
+
+* The live link can be found [here](https://raluca59.github.io/-Three-in-a-row/)
+
+<br>
+
+## Credits
+
+### Media
+
+* The sounds were taken from [Mixkit](https://mixkit.co/free-sound-effects/).
 
