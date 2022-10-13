@@ -148,6 +148,9 @@ body {
     .game-container {
         width: 395px;
     }
+
+    #uppdateText {
+        font-size: 50px;
 }
 
 
@@ -168,6 +171,9 @@ body {
         width: 350px;
     }
 
+    #uppdateText {
+        font-size: 50px;
+
 }
 
 /* screens smaller than 380px */
@@ -186,6 +192,9 @@ body {
     .game-container {
         width: 273px;
     }
+
+    #uppdateText {
+        font-size: 40px;
 }
 
 /*screens smaller than 300px */
@@ -203,5 +212,9 @@ body {
 
     .game-container {
         width: 242px;
+    }
+
+    #uppdateText {
+        font-size: 40px;
     }
 }
