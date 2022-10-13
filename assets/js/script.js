@@ -3,8 +3,9 @@ const restartButton = document.querySelector("#restartButton");
 const updateText = document.querySelector("#uppdateText");
 
 //Restart button and click sound
-const newGameSound = new Audio("sounds/audio.wav");
+const newGameSound = new Audio("sounds/restartButton.wav");
 const clickSound = new Audio("sounds/click.wav");
+const winGame = new Audio("sounds/winning.wav");
 
 //Winning combinations
 const winningConditions =[
@@ -36,7 +37,7 @@ gameRunning = true;
 
 
 function squareClicked(){
-const squareIndex = this.getAttribute("squareIndex");
+const squareIndex = this.getAttribute("data-squareIndex");
 
 if (choices[squareIndex] != "" || !gameRunning) {
     return;
@@ -81,6 +82,7 @@ for (let i = 0; i < winningConditions.length; i++){
 }
 if (roundWon){
     updateText.textContent = `${player} won!`;
+    winGame.play();
     gameRunning = false;
  }
  else if(!choices.includes("")){
