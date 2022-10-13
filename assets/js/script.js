@@ -2,9 +2,11 @@ const squares = document.querySelectorAll(".square");
 const restartButton = document.querySelector("#restartButton");
 const updateText = document.querySelector("#uppdateText");
 
-//restart button and click sound
+//Restart button and click sound
 const newGameSound = new Audio("sounds/audio.wav");
 const clickSound = new Audio("sounds/click.wav");
+
+//Winning combinations
 const winningConditions =[
     [0,1,2],
     [3,4,5],
@@ -29,8 +31,9 @@ squares.forEach(square => square.addEventListener("click", squareClicked));
 restartButton.addEventListener("click", restartGame);
 updateText.textContent = `${player}'s turn`;
 gameRunning = true;
-
 }
+
+
 
 function squareClicked(){
 const squareIndex = this.getAttribute("squareIndex");
@@ -43,15 +46,17 @@ updateSquare(this, squareIndex);
 checkWinner();
 }
 
+
 function updateSquare(square, index){
 choices[index] = player;
 square.textContent = player;
 }
 
-
+//Changing player 
 function changePlayer(){
 player = (player == "X") ? "O" : "X";
 updateText.textContent = `${player}'s turn`;
+
 }
 
 
@@ -88,6 +93,7 @@ if (roundWon){
 
 }
 
+//Restart button
 function restartGame(){
 player = "X";
 choices =["", "", "", "", "", "", "", "", ""];
